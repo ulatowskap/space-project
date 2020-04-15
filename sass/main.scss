@@ -1,0 +1,69 @@
+@import "base/variables.scss";
+@import "base/header.scss";
+@import "base/mixins.scss";
+@import "base/benefits.scss";
+@import "base/add-info.scss";
+@import "base/customer-desc.scss";
+@import "base/form.scss";
+@import "base/footer.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: auto;
+}
+
+.btn__blue {
+  @include button_blue;
+}
+
+.section__header {
+  @include h2_style;
+}
+
+/*media for landscape for mobiles and tablets*/
+
+@media (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+  html {
+    width: 100%;
+  }
+  .form-wrap {
+    width: 570px;
+    height: 1300px;
+  }
+
+  .customer__desc {
+    height: 100vh;
+  }
+
+  .header__main-info {
+    height: 160vh;
+  }
+
+  .benefits .section__header {
+    margin: 40% auto 1%;
+  }
+
+  .menu-mobile {
+    width: 100%;
+  }
+
+  nav {
+    height: 20vh;
+  }
+  .menu-mobile .sort-down {
+    left: 58%;
+  }
+  .menu-mobile .menu__module .logo__module {
+    left: calc(25% - -45px);
+  }
+}
+
+/*form message with info*/
+
+.error {
+  color: red;
+  font-size: 70%;
+  margin-bottom: 10px;
+}
