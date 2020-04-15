@@ -24,18 +24,6 @@ button.addEventListener("click", (event) => {
   }
 });
 
-/*dropdown*/
-
-const down = document.getElementById("down");
-down.addEventListener("click", (event) => {
-  const info = document.getElementById("wrap");
-  if (wrap.style.display == "none") {
-    wrap.style.display = "block";
-  } else {
-    wrap.style.display = "none";
-  }
-});
-
 /*form - validation*/
 
 function printError(elemId, hintMsg) {
